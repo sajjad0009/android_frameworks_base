@@ -439,6 +439,7 @@ public class PackageManagerService extends IPackageManager.Stub
 
     private static final boolean DEBUG_ABI_SELECTION = false;
     private static final boolean DEBUG_INSTANT = Build.IS_ENG;
+
     private static final boolean DEBUG_APP_DATA = false;
 
     /** REMOVE. According to Svet, this was only used to reset permissions during development. */

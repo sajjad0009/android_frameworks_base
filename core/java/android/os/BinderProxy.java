@@ -378,10 +378,6 @@ public final class BinderProxy implements IBinder {
      * @hide
      */
     public static void dumpProxyDebugInfo() {
-        if (Build.IS_ENG) {
-            sProxyMap.dumpProxyInterfaceCounts();
-            sProxyMap.dumpPerUidProxyCounts();
-        }
     }
 
     /**
