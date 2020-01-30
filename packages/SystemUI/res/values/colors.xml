@@ -221,4 +221,6 @@
     <!-- Brightness slider like A12 -->
     <color name="tint_Brightness_slider_like_A12">#ffffffff</color> 
     <color name="color_Brightness_slider_like_A12">#ffffffff</color>
+
+   <color name="keyguard_affordance_background_color">#80000000</color>
 </resources>
