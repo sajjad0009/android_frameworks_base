@@ -6790,6 +6790,13 @@ public final class Settings {
         public static final String FORCE_EXPANDED_NOTIFICATIONS = "force_expanded_notifications";
 
         /**
+         * @hide
+         */
+        public static final String AUTO_BRIGHTNESS_MIN_VALUE = "auto_brightness_min_value";
+
+        private static final Validator AUTO_BRIGHTNESS_MIN_VALUE_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -6938,6 +6945,7 @@ public final class Settings {
             CENTER_NOTIFICATION_HEADERS,
             LOCK_SCREEN_CUSTOM_NOTIF,
             LOCKSCREEN_MAX_NOTIF_CONFIG,
+            AUTO_BRIGHTNESS_MIN_VALUE,
         };
 
         /**
@@ -7183,6 +7191,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(HEADER_ICONS_STYLE);
             PRIVATE_SETTINGS.add(LOCK_SCREEN_CUSTOM_NOTIF);
             PRIVATE_SETTINGS.add(LOCKSCREEN_MAX_NOTIF_CONFIG);
+            PRIVATE_SETTINGS.add(AUTO_BRIGHTNESS_MIN_VALUE);
         }
 
         /**
@@ -7390,6 +7399,7 @@ public final class Settings {
             VALIDATORS.put(POCKET_JUDGE, POCKET_JUDGE_VALIDATOR);
             VALIDATORS.put(LOCK_SCREEN_CUSTOM_NOTIF, LOCK_SCREEN_CUSTOM_NOTIF_VALIDATOR);
             VALIDATORS.put(LOCKSCREEN_MAX_NOTIF_CONFIG, LOCKSCREEN_MAX_NOTIF_CONFIG_VALIDATOR);
+            VALIDATORS.put(AUTO_BRIGHTNESS_MIN_VALUE, AUTO_BRIGHTNESS_MIN_VALUE_VALIDATOR);
         }
 
         /**
