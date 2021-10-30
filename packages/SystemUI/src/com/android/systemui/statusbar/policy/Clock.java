@@ -173,7 +173,7 @@ public class Clock extends TextView implements DemoMode, CommandQueue.Callbacks,
     public static final int SONYSKETCH = 46;
     public static final int SURFER = 47;
 
-    public int DEFAULT_CLOCK_SIZE = 14;
+    public int DEFAULT_CLOCK_SIZE = 15;
     public int DEFAULT_CLOCK_COLOR = 0xffffffff;
 
     protected int mClockDateDisplay = CLOCK_DATE_DISPLAY_GONE;
@@ -182,7 +182,7 @@ public class Clock extends TextView implements DemoMode, CommandQueue.Callbacks,
     protected boolean mShowClock = true;
     protected int mClockDatePosition;
     private int mClockColor = 0xffffffff;
-    private int mClockSize = 14;
+    private int mClockSize = 15;
     private int mAmPmStyle;
     private final boolean mShowDark;
     protected boolean mQsHeader;
