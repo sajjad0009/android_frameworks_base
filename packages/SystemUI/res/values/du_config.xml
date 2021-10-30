@@ -25,7 +25,7 @@
     <bool name="config_fingerprintWakeAndUnlock">true</bool>
 
     <!-- Max visible notification icons -->
-    <integer name="config_maxVisibleNotificationIcons">5</integer>
+    <integer name="config_maxVisibleNotificationIcons">6</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">6</integer>
 
     <!-- Allow devices override audio panel location to the left side -->
