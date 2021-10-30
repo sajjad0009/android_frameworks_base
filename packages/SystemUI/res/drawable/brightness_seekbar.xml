@@ -17,28 +17,25 @@
 */
 -->
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@android:id/background">
-        <shape android:shape="rectangle">
-            <corners android:radius="?android:attr/dialogCornerRadius"/>
-            <size android:height="42dp" />
-            <solid android:color="@color/brightness_slider_background" />
+    <item android:id="@android:id/background"
+          android:gravity="fill_horizontal|center"
+          android:left="10dp"
+          android:right="10dp">
+        <shape android:shape="rectangle"
+               android:tint="@color/tint_Brightness_slider_like_A12">
+            <size android:height="7.5dp" />
+            <solid android:color="@color/color_Brightness_slider_like_A12" />
+            <corners android:radius="@dimen/rounded" />
         </shape>
     </item>
-    <item android:id="@android:id/progress">
-    <clip android:clipOrientation="horizontal" android:gravity="left">
-            <selector>
-                <item android:state_enabled="false"
-                    android:drawable="@android:color/transparent" />
-                <item>
-                    <shape android:shape="rectangle">
-                        <corners android:radius="?android:attr/dialogCornerRadius"/>
-                        <size android:height="42dp" />
-                        <solid android:color="@color/slider_tint" />
-                        <stroke android:width="4dp"
-                                android:color="@color/brightness_slider_background" />
-                    </shape>
-                </item>
+    <item android:id="@android:id/progress"
+          android:gravity="fill_horizontal|center"
+          android:height="37.5dp">
+        <scale android:scaleWidth="100%">
+            <selector android:exitFadeDuration="@android:integer/config_mediumAnimTime">
+                <item android:state_pressed="true" android:drawable="@drawable/seekbar_progress_drawable" />
+                <item android:state_pressed="false" android:drawable="@drawable/seekbar_progress_drawable" />
             </selector>
-    </clip>
+        </scale>
     </item>
 </layer-list>

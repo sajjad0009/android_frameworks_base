@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+      <shape android:shape="rectangle">
+           <solid android:color="?android:colorAccent" />
+           <corners android:radius="24dp" />
+      </shape>
+  </item>
+     <item android:right="10dp" android:width="20dp" android:height="20dp" android:gravity="end|center_vertical" android:id="@+android:id/background" android:drawable="@*drawable/ic_brightness_thumb"/>
+</layer-list>
