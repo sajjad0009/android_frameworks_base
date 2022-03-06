@@ -50,9 +50,9 @@ open class CircleBatteryDrawable(private val context: Context, frameColor: Int) 
     private var height = 0
     private var width = 0
 
-    private var BATTERY_STYLE_CIRCLE = 3
-    private var BATTERY_STYLE_DOTTED_CIRCLE = 4
-    private var BATTERY_STYLE_BIG_DOTTED_CIRCLE = 9
+    private var BATTERY_STYLE_CIRCLE = 7
+    private var BATTERY_STYLE_DOTTED_CIRCLE = 8
+    private var BATTERY_STYLE_BIG_DOTTED_CIRCLE = 13
 
     // Dual tone implies that battery level is a clipped overlay over top of the whole shape
     private var dualTone = false
