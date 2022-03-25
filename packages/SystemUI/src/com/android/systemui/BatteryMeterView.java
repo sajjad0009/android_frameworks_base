@@ -565,11 +565,13 @@ public class BatteryMeterView extends LinearLayout implements
         int batteryWidth;
         int batteryHeight;
 
-        if (mBatteryStyle == BATTERY_STYLE_RLANDSCAPE ||mBatteryStyle == BATTERY_STYLE_LANDSCAPE
-                    || mBatteryStyle == BATTERY_STYLE_RLANDSCAPE_STYLE_A ||mBatteryStyle == BATTERY_STYLE_LANDSCAPE_STYLE_A
+        if (mBatteryStyle == BATTERY_STYLE_RLANDSCAPE ||mBatteryStyle == BATTERY_STYLE_LANDSCAPE) {
+            batteryWidth = res.getDimensionPixelSize(R.dimen.status_bar_battery_icon_width_landscape_default);
+            batteryHeight = res.getDimensionPixelSize(R.dimen.status_bar_battery_icon_height_landscape_default);
+        } else if (mBatteryStyle == BATTERY_STYLE_RLANDSCAPE_STYLE_A || mBatteryStyle == BATTERY_STYLE_LANDSCAPE_STYLE_A
                     || mBatteryStyle == BATTERY_STYLE_RLANDSCAPE_STYLE_B ||mBatteryStyle == BATTERY_STYLE_LANDSCAPE_STYLE_B) {
-            batteryWidth = res.getDimensionPixelSize(R.dimen.status_bar_battery_icon_width_landscape);
-            batteryHeight = res.getDimensionPixelSize(R.dimen.status_bar_battery_icon_height_landscape);
+            batteryWidth = res.getDimensionPixelSize(R.dimen.status_bar_battery_icon_width_landscape_style_a_b);
+            batteryHeight = res.getDimensionPixelSize(R.dimen.status_bar_battery_icon_height_landscape_style_a_b);
         } else if (mBatteryStyle == BATTERY_STYLE_CIRCLE || mBatteryStyle == BATTERY_STYLE_DOTTED_CIRCLE
                     || mBatteryStyle == BATTERY_STYLE_FULL_CIRCLE){
             batteryHeight = res.getDimensionPixelSize(R.dimen.status_bar_battery_icon_circle_width);
