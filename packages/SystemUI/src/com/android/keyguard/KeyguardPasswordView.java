@@ -366,7 +366,7 @@ public class KeyguardPasswordView extends KeyguardAbsKeyInputView
                 if (entry.length() > MINIMUM_PASSWORD_LENGTH_BEFORE_REPORT
                         && kpvCheckPassword(entry)) {
                     mCallback.reportUnlockAttempt(userId, true, 0);
-                    mCallback.dismiss(true, userId);
+                    mCallback.dismiss(true, userId, SecurityMode.Password);
                     resetPasswordText(true, true);
                 }
             }
@@ -413,6 +413,8 @@ public class KeyguardPasswordView extends KeyguardAbsKeyInputView
     @Override
     public SecurityMode getSecurityMode() {
         return SecurityMode.Password;
+
+    }
 
     private boolean kpvCheckPassword(String entry) {
         try {
