@@ -1,25 +1,23 @@
-<!--
-  Copyright (C) 2018 The Android Open Source Project
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
-  -->
-
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24.0"
-        android:viewportHeight="24.0">
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:tint="?android:textColorPrimary"
+    android:height="24.0dip"
+    android:width="24.0dip"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <path
-        android:fillColor="#FF000000"
-        android:pathData="M11,17h2v-6h-2v6zM12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM12,20c-4.41,0 -8,-3.59 -8,-8s3.59,-8 8,-8 8,3.59 8,8 -3.59,8 -8,8zM11,9h2L13,7h-2v2z"/>
+        android:fillColor="#00000000"
+        android:pathData="M15.98,5.95L19.95,12.58C22.60,16.89,21.28,20.53,16.64,20.53L7.36,20.53C2.72,20.53,1.40,16.89,4.05,12.58L8.02,5.95C10.01,2.64,13.99,2.64,15.98,5.95zM12.00,11.25L12.00,8.75"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="2.9520001"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillType="nonZero" />
+    <path
+        android:fillColor="#ff000000"
+        android:pathData="M12.00,13.75C11.03,13.75,10.25,14.53,10.25,15.50C10.25,16.47,11.03,17.25,12.00,17.25C12.97,17.25,13.75,16.47,13.75,15.50C13.75,14.53,12.97,13.75,12.00,13.75z"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillType="nonZero" />
 </vector>
